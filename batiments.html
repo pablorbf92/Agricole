@@ -3,44 +3,110 @@
 
 	<head>
 	
-		<title>Agricole</title>
+		<title>Fertilia</title>
 		<meta charset = "utf-8"/>
-		<meta name="author" content="prebu" />
-		<meta name = "description" content = "Accueil du site de présentation du jeu"/>
-		<meta name = "keywords" content = "Agricole, Jeux"/>
-		<link rel="icon" href="images/jam.png" />
-		<link rel="stylesheet" href="styles.css"/>		
+		<meta name="author" content="ian le-roux" />
+		<meta name="author" content="ian le-roux" />
+		<meta name="author" content="ian le-roux" />
+		<meta name = "description" content = "Accueil du site de présentation de Fertilia"/>
+		<meta name = "keywords" content = "Fertilia, Jeux"/>
+		<link rel="icon" href="images/logo.png" />
+		<link rel="stylesheet" href="styles.css"/>
+		<style>h1{
+                background-color:    rgb(162, 113, 16,0.5);
+                width:160px;
+                border-radius: 5px;
+                text-align: center;
+                padding:5px;
+            }
+		</style>		
 		
 	</head>
 	
 <body>
 	<header>
 		<nav>
-				<img src="images/logo.png" alt="logo du jeu agricole" />
+				<a href="index.html">
+				<img src="images/logo.png" alt="logo de Fertilia" />
+				</a>
 				<ul>
 					<li> <a href="index.html" > Accueil </a> </li>
 					<li> <a href="plantes.html" > Plantes </a> </li>
 					<li> <a href="animaux.html" > Animaux </a> </li>
 					<li> <a href="batiments.html" > Bâtiments </a> </li>
 					<li> <a href="materiels.html" > Matériels </a> </li>
+					<li> <a href="aleas.html"> Aléas </a> </li>
 				</ul>		
 			</nav>
-			<h1> Agricole </h1>
+			<h1 id="Haut">Fertilia</h1>
 	</header>
 	<main>
 		<section>
 			<h2>Bâtiments et stockage</h2>
 			<article>
-				<h3>Garage</h3>
-				<p>Les garages permettent d'entreposer des véhicules, qui prennent plus ou moins de place. Ils ont capacité limité qui est de 4 véhicules.
-					Ils peuvent être achetés sur le marché en échange d'argent.
+				<h3> Garage </h3>
+					<p>Les garages permettent d'entreposer des véhicules, qui prennent plus ou moins de place. Ils ont une capacité limité qui est de 4 véhicules.
+						Ils peuvent être achetés sur le marché en échange d'argent.
+					</p>
+					<figure>
+						<img src="images/garage.png" alt="image de garage du jeu">
+					</figure>
+			</article> 		
+			<article>
+				<h3> Hangar </h3>
+				<p>Les hangars permettent d'entreposer des véhicules, il ont plus de capacité de stockage des garages. Ils ont une capacité limité qui est de 10 véhicules. 
+					Ils prennent plus de place que les garages sur la map mais reste quand même plus avantageux que les garages.
 				</p>
 				<figure>
-					<img src="images/garage.png" alt="image de garage du jeu">
-					<figcaption></figcaption>
+					<img src="images/hangar.png" alt="image du hangar">
 				</figure>
-			</article> 
+			</article>
+			<article>
+				<h3> Entrepôt </h3>
+				<p>Ils permettent de stocker les différents fruits et légumes. Un entrepôt peut soit stocker des légumes de 
+					même taille, soit conserver des fruits. Comme les maïs et les blés ensembles.
+				</p>
+				<figure>
+					<img src="images/entrepot.png" alt="image du hangar">
+				</figure>
+			</article>
+			<article>
+				<h3> Enclos </h3>
+				<p>Là où les animaux peuvent vivre. Chaque enclos a une capacité limité. De ce fait chaque animal prend plus ou moins
+				de place.
+				</p>
+				<figure>
+					<img src="images/enclos.png" alt="image de l'enclos">
+				</figure>
+			</article>
+			<article>
+				<h3> Entrepôt frigorifique </h3>
+				<p> Les entrepôts frigorifiques permettent de stocker les différents types de viande. Chaque animal apporte chacun
+					 leur propre viande. Les entrepôts frigorifiques sont alors essentiels pour la gestion des ressources animalières.
+				</p>	
+				<figure>
+					<img src="images/frigo.png" alt="image de l'entrepot frigorifique">
+				</figure>
+			</article>
+			<article>
+				<h3> Abattoir </h3>
+				<p> Les abattoirs permettent de tuer les animaux et de récupérer les ressources qui leurs sont attribuées </p>
+				<figure>
+					<img src="images/abattoir.png" alt="image de l'abattoir">
+				</figure>
+			</article>	
 		</section>
 	</main>
-	
+	<footer>
+			<time datetime="2025-02-05">23/01/2025</time>
+			<span>
+				Fait par Ian Le Roux, Léandre Leclerc et Pablo Rebufie, pour le cours de Développement Web de CY Cergy Paris Université			
+			</span>
+			<nav>
+				<ul class="suppression">
+					<li> <a href="#Haut" > Haut de page </a> </li>
+				</ul>		
+			</nav>
+	</footer>
 </body>
+</html>
